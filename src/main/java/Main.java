@@ -13,7 +13,7 @@ public class Main {
 	public static void main(String[] args) {
         Client client = null;
         try {
-        	System.out.println("-------Main-------");
+        	System.out.println("-------Main -------");
 //          my-application
             Builder settings = Settings.builder().put("cluster.name", "dw-Elasticsearch");
             client = TransportClient.builder().settings(settings).build()

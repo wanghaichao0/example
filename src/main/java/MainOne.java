@@ -40,7 +40,7 @@ public class MainOne {
              
             IndicesExistsResponse indexResponse = client.admin().indices().prepareExists("dwnews")
                     .execute().actionGet();
-            System.out.println(indexResponse.isExists());
+            System.out.println("是否存在dwnews索引"+indexResponse.isExists());
         } catch (UnknownHostException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
